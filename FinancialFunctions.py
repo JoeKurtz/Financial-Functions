@@ -13,7 +13,7 @@ print(perp_npv(1000,5))
 print(grow_perp_npv(1000,5,2))
 
 
-cfList = [20, 50, 90]
+cfList = [20, 50, 90, 100, 2, 3, 400, -100, -50]
 r = 0.05
 
 def npv_calc(cfList, r):
@@ -22,7 +22,6 @@ def npv_calc(cfList, r):
         npv += cfList[i] / ((1 + r) ** (i+1))
     return f"The Present Value is ${npv:,.2f}"
 print(npv_calc(cfList,r))
-
 
 
 
