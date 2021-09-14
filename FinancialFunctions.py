@@ -24,5 +24,39 @@ def npv_calc(cfList, r):
 print(npv_calc(cfList,r))
 
 
+# Ideally we want
+
+
+def pv_calc_1(CF1, r):
+    pv1 = CF1/ ((1 + (r/100))**1)
+    return pv1
+def pv_calc_2(CF2, r):
+    pv1 = CF2/ ((1 + (r/100))**2)
+    return pv2
+def pv_calc_3(CF3, r):
+    pv1 = CF3/ ((1 + (r/100))**3)
+    return pv3
+
+def pv_calc_0(pv1, pv2, pv3):
+    npv = sum(pv1, pv2, pv3)
+    return npv
+present_value = dict()
+
+for i in range(numPeriods):
+
+    dict[i] = PV(i, r, )
+
+present_value[0] = 20
+
+    {
+    "Year Zero / NPV": pv_calc_0,
+    "Year One": pv_calc_1,
+    "Year Two": pv_calc_2,
+    "Year Three": pv_calc_3
+
+}
+
+print(present_value)
+
 
 
